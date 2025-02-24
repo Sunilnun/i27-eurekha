@@ -1,6 +1,13 @@
-// Call the Shared Lib
+pipeline{
+    agent {
+        label 'k8s-slave'
+    }
 
-@Library("com.i27academy.slb@master") _
-helmPipeline(
-    appName: 'eureka'
-)
+    //stages
+    stages{
+        stage('build'){
+            echo "****Testing jenkins pipeline"
+
+        }
+    }
+}
