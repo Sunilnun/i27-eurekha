@@ -6,7 +6,11 @@ pipeline{
     //stages
     stages{
         stage('build'){
-            echo "****Testing jenkins pipeline"
+            steps{
+                echo "****Testing jenkins pipeline"
+
+            }
+            
 
         }
     }
