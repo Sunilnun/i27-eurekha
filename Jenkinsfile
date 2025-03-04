@@ -15,7 +15,7 @@ pipeline{
     stages{
         stage('build'){
             steps{
-                echo "Building the ${env.APPLICATION_NMAE} application"
+                echo "Building the ${env.APPLICATION_NAME} application"
                 sh 'mvn clean package -DskipTests=true'
             
 
