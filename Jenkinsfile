@@ -8,14 +8,14 @@ pipeline{
 
     }
     environment {
-        Application_name = "eurekha"
+        APPLICATION_NAME = "eurekha"
     }
 
     //stages
     stages{
         stage('build'){
             steps{
-                echo "Building the ${env.Application_name} application"
+                echo "Building the ${env.APPLICATION_NMAE} application"
                 sh 'mvn clean package -DskipTests=true'
             
 
