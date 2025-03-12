@@ -22,7 +22,7 @@ pipeline{
         stage('sonar'){
             steps{
                 sh """
-                echo"starting sonar scan"
+                echo "starting sonar scan"
                 mvn sonar:sonar\
                     -Dsonar.projectkey=i27-eureka \
                     -Dsonar.host.url=http://34.72.64.46:9000 \
