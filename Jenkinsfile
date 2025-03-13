@@ -26,7 +26,7 @@ pipeline{
         }
         stage('sonar'){
             steps{
-                // echo "starting sonar scan"
+                echo "starting sonar scan"
                 // withSonarQubeENV('sonar'){//the name you saved in syatem under configure jenkins
                 sh """
                 echo "starting sonar scan"
@@ -43,7 +43,7 @@ pipeline{
                 
             }
 
-        }
+        
         stage('Docker'){
             steps{
                 //existing artifact image format: i27-eurekha-0.0.1-snapshot.jar
